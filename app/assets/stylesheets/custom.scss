@@ -1,0 +1,85 @@
+// $darkest-green: #37554E;
+// $light-slate: #92AFAC;
+// $very-light-slate: #CBD3D2;
+// $dark-green: #6E8C87;
+// $brown: #5A574E;
+
+
+// .jumbotron {
+// 	height: 85vh;
+// 	background-image: linear-gradient(
+// 						to right bottom,
+// 						rgba($light-slate,0.6),
+// 						rgba($dark-green,0.6)),
+// 						url('greenDoor1.jpg');
+
+// 	background-size: cover;
+// 	background-position: top;
+// 	position: relative;
+// 	-webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+// 	clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+// 	margin-bottom: 0px;
+// 	margin-top: -50px;
+// }
+
+
+$darkest-red: #591412;
+$mauve: #B9A9A8;
+$dim-gray: #757868;
+$sea-green: #A2A8A4;
+$light-slate: #92AFAC;
+$very-light-slate: #CBD3D2;
+$dark-green: #6E8C87;
+$brown: #5A574E;
+
+
+.jumbotron {
+	height: 85vh;
+	background-image: linear-gradient(
+						to right bottom,
+						rgba($mauve,0.6),
+						rgba($darkest-red,0.6)),
+						url('redWall1.jpg');
+
+	background-size: cover;
+	background-position: top;
+	position: relative;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+	margin-bottom: 0px;
+	margin-top: -50px;
+	text-align: center;
+}
+.jumbo-text {
+    margin-top: 100px;
+}
+.navbar {
+    margin-top: 0px;
+}
+.navbar-light {
+    color: #fff;
+}
+.bg-green {
+    background: $darkest-red;
+}
+.navbar-brand {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3em;
+}
+.btn-outline-danger {
+    color: #fff;
+}
+.display-1,
+.display-4,
+.display-6{
+    font-family: 'Great Vibes', cursive;
+    color: #fff;
+     text-shadow: 0px 3px 0px $darkest-red,
+                 0px 14px 10px rgba(0,0,0,0.15),
+                 0px 24px 2px rgba(0,0,0,0.1),
+                 0px 34px 30px rgba(0,0,0,0.1);
+    
+}
+.display-1 {
+    font-size: 8em;
+}
