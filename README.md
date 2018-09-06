@@ -22,3 +22,21 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+* 
+* Add gems
+** build user authentication vs. devise
+* products model
+* categories of products
+* shipping
+* taxes yes or no?
+* front end colors
+* landing page
+* 
+* Color Palette: 
+* darkest green #37554E
+* light slate: #92AFAC
+* very light: #CBD3D2
+* dark green: #6E8C87
+* brown: #5A574E
+* 
+* 
