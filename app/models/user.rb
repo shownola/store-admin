@@ -5,5 +5,5 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
          
   validates_presence_of :email, :password, :password_confirmation
-  validates_presence_of :first_name, :last_name
+  # validates_presence_of :first_name, :last_name
 end
