@@ -39,4 +39,6 @@ Things you may want to cover:
 * dark green: #6E8C87
 * brown: #5A574E
 * 
+Change email address in initializers/devise.rb
+* 
 * 
