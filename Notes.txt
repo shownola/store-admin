@@ -51,3 +51,17 @@ SHIPPING:
 
 
 rails g resource Product name:string description:text image:string price:decimal cost:decimal sku:string date_available:date date:date
+
+Checkout Bulma gem
+
+============== SIMPLE FORM ===========================================
+
+  Be sure to have a copy of the Bootstrap stylesheet available on your
+  application, you can get it on http://getbootstrap.com/.
+
+  Inside your views, use the 'simple_form_for' with the Bootstrap form
+  class, '.form-inline', as the following:
+
+    = simple_form_for(@user, html: { class: 'form-inline' }) do |form|
+    
+======================================================================

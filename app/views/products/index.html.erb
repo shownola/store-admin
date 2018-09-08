@@ -1,1 +1,33 @@
-<h1>All Products</h1>
+
+
+
+<div class="container">
+  <div class="display-3 text-center">
+    All Products
+  </div>
+  
+  <div class="container image-container">
+  <% @products.each_slice(4) do |products| %>
+  <div class="row">
+    <% products.each do |product| %>
+      <div class="col-md-4">
+        <div class="product">
+          <div class="image_wrapper">
+            <%= link_to product do %>
+              <%= image_tag(product.image.url,size: '300x300') unless product.image.blank? %>
+            <% end %>
+          </div>
+          <h2>
+            <%= link_to product.name, product, class: 'title-link' %>
+          </h2>
+          <p><%= number_to_currency(product.price) %></p>
+           
+        </div>
+      </div>
+    <% end %>
+  </div>
+<% end %>
+</div>
+  
+</div>
+
