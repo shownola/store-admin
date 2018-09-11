@@ -65,3 +65,20 @@ Checkout Bulma gem
     = simple_form_for(@user, html: { class: 'form-inline' }) do |form|
     
 ======================================================================
+
+
+rails g scaffold LineItem product:references cart:belongs_to
+
+
+From _navigation
+
+ <!--<% if cart_has_items %>-->
+      <!--  <li class="nav-item">-->
+      <!--    <i class="fas fa-shopping-cart"></i>-->
+      <!--    <%= link_to cart_path(@cart), class: 'nav-link' do %>-->
+      <!--    Cart-->
+      <!--  </li>-->
+      <!--  <% cart_count_over_one %>-->
+      <!--  <% end %>-->
+      <!--<% end %>-->
+      

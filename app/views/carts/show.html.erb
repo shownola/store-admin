@@ -1,0 +1,23 @@
+<div class="container">
+
+<div class="keep-shopping pv1 mt4 text-right">
+  <%= link_to 'Keep Shopping', products_path, class: 'button is-warning' %>
+</div>
+<hr />
+<section class="section">
+  <%= render(@cart.line_items) %>
+
+  <div class="columns">
+    <div class="column">
+      <%= button_to 'Empty Cart', @cart, method: :delete, data: { confirm: "Are you sure? " }, class: "button btn-danger" %>
+    </div>
+    <div class="column total text-right">
+      <h4 class="title col-md-4">
+        <span class="">Total:</span> <%= number_to_currency(@cart.total_price) %>
+      </h4>
+    </div>
+  </div>
+</section>
+</div>
+
+

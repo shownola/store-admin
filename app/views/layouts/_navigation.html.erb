@@ -11,9 +11,8 @@
         
         <%= link_to 'Products', products_path, class: 'nav-link', id: 'firstNavLink' %>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Womens</a>
-      </li>
+      
+     
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Departments
@@ -28,6 +27,28 @@
       <li class="nav-item">
         <a class="nav-link disabled" href="#">Kids</a>
       </li>
+      
+      <li class="nav-item">
+        <%= link_to 'Sign Up', new_user_registration_path, class: 'nav-link' %>
+      </li>
+      <li class="nav-item">
+        <%= link_to 'Login', user_session_path, class: 'nav-link' %>
+      </li>
+      
+      <li class="nav-item">
+        <%= link_to 'Logout', destroy_user_session_path, method: :delete, class: 'nav-link' %>
+      </li>
+      
+       <% if cart_has_items %>
+         <li class="nav-item">
+           <%= link_to cart_path(@cart), class: 'nav-link' do %>
+             <span class="icon is-small">
+                  <i class="fa fa-shopping-cart"></i>
+             </span>Cart
+           <%= cart_count_over_one %>
+         </li>
+         <% end %>
+       <% end %>
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
