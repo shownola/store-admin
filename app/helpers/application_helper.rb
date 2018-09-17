@@ -10,3 +10,5 @@ module ApplicationHelper
     return @cart.line_items.count > 0
   end
 end
+
+

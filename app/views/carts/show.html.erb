@@ -1,3 +1,17 @@
+<!--<div class="container">-->
+<!--  <h2 class="display-3 text-center">My Cart</h2>-->
+
+<!--  <div class="keep-shopping text-right">-->
+<!--    <%= link_to 'Keep Shopping', products_path, class: 'button btn-warning' %>-->
+<!--  </div>-->
+<!--  <hr />-->
+<!--  <section class="section">-->
+<!--    <%= render(@cart.line_items) %>-->
+<!--  </section>-->
+<!--</div>-->
+
+
+
 <div class="container">
 
 <div class="keep-shopping pv1 mt4 text-right">
@@ -9,15 +23,34 @@
 
   <div class="columns">
     <div class="column">
-      <%= button_to 'Empty Cart', @cart, method: :delete, data: { confirm: "Are you sure? " }, class: "button btn-danger" %>
+      <div class="row button-g">
+      <%= button_to 'Keep Shopping', products_path, class: 'button is-warning pr-3' %>
+      <%= button_to 'Empty Cart', @cart, method: :delete, data: { confirm: "Are you sure? " }, class: "button btn-danger pr-3" %>
+      <%= button_to 'Checkout', "#", class: "button btn-success pr-3" %>
     </div>
-    <div class="column total text-right">
-      <h4 class="title col-md-4">
-        <span class="">Total:</span> <%= number_to_currency(@cart.total_price) %>
-      </h4>
-    </div>
+    
+    
+  </div>
   </div>
 </section>
+
+    <div class="column total d-flex justify-content-end text-right">
+      <h5 class="title col-md-4">
+        <span class="">Subtotal:</span> <%= number_to_currency(@cart.total_price) %>
+      </h5>
+    </div>
+    
+    <div class="column total d-flex justify-content-end text-right">
+      <h5 class="title col-md-4">
+        <span class="">Shipping:</span> <%= number_to_currency(@cart.shipping) %>
+      </h5>
+    </div>
+    
+    <div class="column total d-flex justify-content-end text-right">
+      <h4 class="title col-md-4">
+        <span class="">Subtotal:</span> <%= number_to_currency(@cart.final_price) %>
+      </h4>
+    </div>
 </div>
 
 

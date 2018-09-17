@@ -1,22 +1,32 @@
+
+
+
 <div class="columns align-items-center">
+  <div class="row">
+    
   <div class="column col-md-1">
     <%= line_item.quantity %>
   </div>
   <div class="column col-md-2">
     <figure class="is-128x128 image">
-      <%= image_tag(line_item.product.image_url(:thumb)) %>
+      <%= image_tag(line_item.product.image_url(:small)) %>
     </figure>
   </div>
-  <div class="column col-md-9">
+  <div class="column col-md-5">
     <strong><%= line_item.product.name %></strong>
     <div class="columns align-items-center">
       <div class="content column is-9">
-        <%= truncate(line_item.product.description, length: 140) %>
-      </div>
-      <div class="column col-md-3 text-right">
-        <strong class="f4"><%= number_to_currency(line_item.total_price) %></strong>
+        <%= truncate(line_item.product.description, length: 100) %>
       </div>
     </div>
+      
+    
+  </div>
+  
+  <div class="column col-md-3 text-right">
+        <strong class="f4"><%= number_to_currency(line_item.total_price) %></strong>
+      </div>
+  
   </div>
 </div>
 
