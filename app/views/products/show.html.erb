@@ -11,13 +11,14 @@
           <%= @product.name %>
         </h1>
         
-         <p><span class="p-5">$<%= @product.price %></span>Sku:<span class="p-5"><%= @product.sku %></span></p>
+         <h5 class="pl-5">$<%= @product.price %><span class=" pl-5 text-right">Sku:<%= @product.sku %></span></h5>
   
-        <p class="">
+        <p class="description">
           <%= @product.description %>
         </p>
         <hr />
         
+      
         <h4>Quantity </h4>
         <%= button_to 'Add to Cart', line_items_path(product_id: @product),  class: 'btn btn-warning' %>
        

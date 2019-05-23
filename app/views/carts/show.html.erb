@@ -24,7 +24,7 @@
   <div class="columns">
     <div class="column">
       <div class="row button-g">
-      <%= button_to 'Keep Shopping', products_path, class: 'button is-warning pr-3' %>
+      <%= link_to 'Keep Shopping', products_path, class: 'button btn-warning pr-3' %>
       <%= button_to 'Empty Cart', @cart, method: :delete, data: { confirm: "Are you sure? " }, class: "button btn-danger pr-3" %>
       <%= button_to 'Checkout', "#", class: "button btn-success pr-3" %>
     </div>
