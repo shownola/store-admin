@@ -32,10 +32,16 @@ $very-light-slate: #CBD3D2;
 $dark-green: #6E8C87;
 $brown: #5A574E;
 
+// $font-size: 16px = 1rem;
+
 @mixin box-shadow {
 	-webkit-box-shadow: rgba(0, 0, 0, 0.09) 0 2px 0;
 	-moz-box-shadow: rgba(0, 0, 0, 0.09) 0 2px 0;
 	box-shadow: rgba(0, 0, 0, 0.09) 0 2px 0;
+}
+
+html {
+    font-size: 100%;
 }
 
 
@@ -69,9 +75,15 @@ $brown: #5A574E;
     background: $darkest-red;
 }
 .nav-link {
-  
     font-size: 1.3em;
+    &:hover {
+        background: $darkest-red;
+        color: $mauve;
+        text-decoration: underline; 
+       
+    }
 }
+
 #firstNavLink {
     padding-left: 15px;
 }
@@ -79,6 +91,11 @@ $brown: #5A574E;
    font-family: 'Great Vibes', cursive;
     font-size: 2em; 
     color: #fff;
+    &:hover {
+        background: $darkest-red;
+        text-decoration: none;
+        color: $mauve;
+    }
 }
 .btn-outline-danger {
     color: #fff;
@@ -195,8 +212,10 @@ footer {
     margin-left: 150px;
     margin-right: 200px;
     
-    
-    
+}
+
+.show-container {
+    font-size: 1.5rem;
 }
 #bg-show {
     background: #f8f8f8;
@@ -204,5 +223,58 @@ footer {
     // -webkit-box-shadow: 0 10px 6px -6px #777;
     // -moz-box-shadow: 0 10px 6px -6px #777;
     // box-shadow: 0 10px 6px -6px #777;
-    padding: 5px 5px 5px 5px;
+    padding: 8px 8px 8px 8px;
+    font-size: 1.4rem;
+}
+
+.btn .btn-warning {
+    background: #6E8C87;
+}
+button-g {
+    padding: 5px;
+}
+
+.product {
+	background: white;
+	border-radius: 5px;
+	margin-bottom: 40px;
+	@include box-shadow;
+	.image_wrapper {
+		max-width: 100%;
+		border-radius: 5px 5px 0 0;
+		overflow: hidden;
+	}
+	img {
+		width: 100%;
+		-webkit-transition: all .3s ease-out;
+	  -moz-transition: all .3s ease-out;
+	  -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+		&:hover {
+			transform: scale(1.075);
+		}
+	}
+	h2 {
+		padding: 15px 5%;
+		margin: 0;
+		font-size: 20px;
+		font-weight: normal;
+		line-height: 1.5;
+		a {
+			color: $darkest-red;
+		}
+	}
+}
+
+.index-price {
+    font-weight: 500;
+    font-size: 18px;
+    color: $mauve;
+}
+.price {
+    color: $mauve;
+}
+.description {
+    font-size: .9rem;
+    color: $dim-gray;
 }
