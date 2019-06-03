@@ -1,0 +1,26 @@
+<%= simple_form_for @product, html: { multipart: true } do |f| %>
+  <%= f.input :name, wrapper_html: { class: 'productName' } %>
+  <%= f.input :description, wrapper_html: { class: 'productDescription' } %>
+  <%= f.input :sku, wrapper_html: { class: 'skuInput' } %>
+  <%= f.input :image, as: :file,  wrapper_html: { class: 'inputImage' } %>
+  <div class="row">
+    <%= f.input :price, wrapper_html: {class: 'priceInput'} %>
+    <%= f.input :cost, wrapper_html: { class: 'costInput pl-5' } %>
+    <%= f.input :date_available, as: :date, wrapper_html: { class: 'datepicker pl-5' } %>
+  </div>
+  
+  
+  
+  <%= f.button :submit %>
+<% end %>
+
+ <!--t.string "name"-->
+ <!--   t.text "description"-->
+ <!--   t.string "image"-->
+ <!--   t.decimal "price"-->
+ <!--   t.decimal "cost"-->
+ <!--   t.string "sku"-->
+ <!--   t.date "date_available"-->
+ <!--   t.date "date"-->
+ <!--   t.datetime "created_at", null: false-->
+ <!--   t.datetime "updated_at", null: false-->
