@@ -1,0 +1,178 @@
+// $darkest-green: #37554E;
+// $light-slate: #92AFAC;
+// $very-light-slate: #CBD3D2;
+// $dark-green: #6E8C87;
+// $brown: #5A574E;
+
+
+// .jumbotron {
+// 	height: 85vh;
+// 	background-image: linear-gradient(
+// 						to right bottom,
+// 						rgba($light-slate,0.6),
+// 						rgba($dark-green,0.6)),
+// 						url('greenDoor1.jpg');
+
+// 	background-size: cover;
+// 	background-position: top;
+// 	position: relative;
+// 	-webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+// 	clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+// 	margin-bottom: 0px;
+// 	margin-top: -50px;
+// }
+
+
+$darkest-red: #591412;
+$mauve: #B9A9A8;
+$dim-gray: #757868;
+$sea-green: #A2A8A4;
+$light-slate: #92AFAC;
+$very-light-slate: #CBD3D2;
+$dark-green: #6E8C87;
+$brown: #5A574E;
+
+
+.jumbotron {
+	height: 85vh;
+	background-image: linear-gradient(
+						to right bottom,
+						rgba($mauve,0.6),
+						rgba($darkest-red,0.6)),
+						url('redWall1.jpg');
+
+	background-size: cover;
+	background-position: top;
+	position: relative;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+	margin-bottom: 0px;
+	margin-top: -50px;
+	text-align: center;
+}
+.jumbo-text {
+    margin-top: 100px;
+}
+.navbar {
+    margin-top: 0px;
+}
+.navbar-light {
+    color: #fff;
+}
+.bg-green {
+    background: $darkest-red;
+}
+.navbar-brand {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3em;
+}
+.btn-outline-danger {
+    color: #fff;
+}
+.jumbo-text {
+    font-family: 'Great Vibes', cursive;
+    color: #fff;
+     text-shadow: 0px 3px 0px $darkest-red,
+                 0px 14px 10px rgba(0,0,0,0.15),
+                 0px 24px 2px rgba(0,0,0,0.1),
+                 0px 34px 30px rgba(0,0,0,0.1);
+    
+}
+.display-1 {
+    font-size: 8em;
+}
+.feature-cards {
+    color: $darkest-red;
+    text-shadow: 3px 3px 3px $darkest-red;
+    margin-bottom: 70px;
+                 
+}
+.display-3 {
+    color: $mauve;
+    font-family: 'Great Vibes', cursive;
+    
+}
+
+// .card-img-top {
+//     width: 100%;
+//     height: 100vh;
+//     object-fit: cover;
+// }
+
+
+/* entire container, keeps perspective */
+.flip-container {
+  -webkit-perspective: 1000;
+  background: #ccc;
+  margin: 100px auto;
+}
+
+/* flip the pane when clicked */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+  -webkit-transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+	width: 320px;
+	height: 480px;
+}
+
+/* flip speed goes here */
+.flipper {
+	-webkit-transition: 0.6s;
+	-webkit-transform-style: preserve-3d;
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	-webkit-backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+  z-index: 2;
+  background: yellow;
+}
+
+/* back, initially hidden pane */
+.back {
+  -webkit-transform: rotateY(180deg);
+  background: brown;
+}
+
+.card-deck {
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+}
+
+footer {
+    margin-top: 40px;
+    padding-top: 40px;
+    background-image: linear-gradient(
+                      to right top, #b9a9a8, #a48280, #8d5d59, #743934, #591412);
+    height: 400px;
+    
+
+    -webkit-clip-path: polygon(0 49%, 100% 13%, 100% 99%, 0% 100%);
+    clip-path: polygon(0 49%, 100% 13%, 100% 99%, 0% 100%);
+}
+.footer {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 160px;
+    color: #fff;
+}
+
+// footer {
+//     background-image: linear-gradient(
+// 						to right bottom,
+// 						rgba($mauve,0.6),
+// 						rgba($darkest-red,0.6)),
+// 						url('redWall1.jpg');
+//     height: 200px;
+    
+// }
